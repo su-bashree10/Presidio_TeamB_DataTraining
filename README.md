@@ -2,10 +2,10 @@
 
 ## Team members:
 
-Aliasgar Kaeed Challawala
-Saravana Raja P P
-Shakthivel R
-Subashree B
-Sridhar S
-Yadlapalli Venkata Lalith Kumar
+Aliasgar Kaeed Challawala  
+Saravana Raja P P   
+Shakthivel R  
+Subashree B  
+Sridhar S  
+Yadlapalli Venkata Lalith Kumar  
 
