@@ -11,11 +11,11 @@ class Utility {
         .getOrCreate()
       spark
     }
-    def readCSV(path: String): Unit = {
+    def readFile(path: String): Unit = {
       val sparkContext = getSparkSession
       val csvDF = sparkContext.read
         .option("header", "true")
         .csv(path)
-      csvDF.createOrReplaceTempView("PRODUCT_TABLE")
+      csvDF.createOrReplaceTempView("SALES_TABLE")
     }
 }

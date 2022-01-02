@@ -5,11 +5,26 @@
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/${project.build.directory}/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/${project.build.directory}/test-classes" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="scala-sdk-2.12.10" level="application" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://D:/data/spark-3.0.3-bin-hadoop2.7/jars" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://D:/data/spark-3.0.3-bin-hadoop2.7/jars" />
+        </SOURCES>
+        <jarDirectory url="file://D:/data/spark-3.0.3-bin-hadoop2.7/jars" recursive="false" />
+        <jarDirectory url="file://D:/data/spark-3.0.3-bin-hadoop2.7/jars" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="Maven: org.apache.spark:spark-core_2.10:2.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.avro:avro-mapred:hadoop2:1.7.7" level="project" />
     <orderEntry type="library" name="Maven: org.apache.avro:avro-ipc:1.7.7" level="project" />
@@ -235,18 +250,5 @@
     <orderEntry type="library" name="Maven: org.scala-lang.modules:scala-xml_2.11:1.0.6" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang.modules:scala-parser-combinators_2.11:1.0.4" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang.modules:scala-swing_2.11:1.0.2" level="project" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="file://D:/Data/spark-3.0.3-bin-hadoop2.7/spark-3.0.3-bin-hadoop2.7/jars" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://D:/Data/spark-3.0.3-bin-hadoop2.7/spark-3.0.3-bin-hadoop2.7/jars" />
-        </SOURCES>
-        <jarDirectory url="file://D:/Data/spark-3.0.3-bin-hadoop2.7/spark-3.0.3-bin-hadoop2.7/jars" recursive="false" />
-        <jarDirectory url="file://D:/Data/spark-3.0.3-bin-hadoop2.7/spark-3.0.3-bin-hadoop2.7/jars" recursive="false" type="SOURCES" />
-      </library>
-    </orderEntry>
   </component>
 </module>
