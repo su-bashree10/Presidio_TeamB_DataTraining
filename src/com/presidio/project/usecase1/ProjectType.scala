@@ -12,7 +12,7 @@ class ProjectType {
     val utility = new Utility
     utility.readFile("C:\\Users\\VC\\Downloads\\sales.csv")
     val ss = utility.getSparkSession
-    val productLineDF = ss.sql("select `Product type` from PRODUCT_TABLE where `Product line`='Golf Equipment'")
+    val productLineDF = ss.sql("select `Product type` from SALES_TABLE where `Product line`='"+ProductLine.golf+"'")
     productLineDF.show
     val productLineRDD = productLineDF.rdd
     val productTypeRDD = productLineRDD.map(each => (each, 1))
