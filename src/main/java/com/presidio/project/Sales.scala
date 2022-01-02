@@ -1,8 +1,11 @@
-package com.presidio.project
+package main.java.com.presidio.project
 
-object Sales {
+import main.java.com.presidio.project.utils.Utility
+
+object Sales extends Utility{
 
   def main(args: Array[String]): Unit = {
-    print("hello!")
+    val csvDF = readCSV("/Users/VC/Downloads/sales.csv")
+    csvDF.show(10)
   }
 }
