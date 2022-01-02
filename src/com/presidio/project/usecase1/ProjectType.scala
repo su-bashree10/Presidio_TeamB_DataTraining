@@ -18,7 +18,10 @@ class ProjectType {
     val productTypeRDD = productLineRDD.map(each => (each, 1))
     val productType = productTypeRDD.reduceByKey((x, y) => x + y)
     productType.foreach(println)
-    val productTypeCount = productType.count()
+    val productCase=for{
+      x<-productType
+    }yield ProductTypes
+    val productTypeCount = productCase.count()
     println("Number of Product Types: "+productTypeCount)
     ParquetFile(productType)
   }
@@ -39,3 +42,4 @@ class ProjectType {
   }
 
 }
+case class ProductTypes(productType:Row,count:Int)
