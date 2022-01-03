@@ -6,9 +6,9 @@ class Utility {
     
     // to create and return spark session
     def getSparkSession: SparkSession = {
-      System.setProperty("hadoop.home.dir", "D:\\winutils")
+      System.setProperty("hadoop.home.dir", "E:\\winutils")
       val spark = SparkSession.builder
-        .master("local[*]")
+        .master("spark://shakthi-VirtualBox:7077")
         .appName("DataSalesProj")
         .getOrCreate()
       spark

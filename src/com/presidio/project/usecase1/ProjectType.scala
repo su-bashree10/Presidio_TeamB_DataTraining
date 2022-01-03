@@ -12,7 +12,7 @@ class ProjectType extends ProjectTypeSales {
 
     // Reading CSV file
     val utility = new Utility
-    utility.readFile("C:\\Users\\VC\\Downloads\\sales.csv")
+    utility.readFile("sales.csv")
 
     // Getting Spark Session
     val ss = utility.getSparkSession
@@ -57,13 +57,12 @@ class ProjectType extends ProjectTypeSales {
     val productDataFrame = session.createDataFrame(productTypeRow,productSchema)
 
     // Writing into ParquetFile
-    productDataFrame.write.parquet("C:\\Users\\VC\\Downloads\\ProductLists")
+    productDataFrame.write.parquet("ProductLists")
 
     // Reading from ParquetFile
-    val outputFile  = session.read.parquet("C:\\Users\\VC\\Downloads\\ProductLists")
+    val outputFile  = session.read.parquet("ProductLists")
     println("Output")
-    outputFile.show()
-  }
+    outputFile.show() }
 
 }
 case class ProductTypes(productType:Row,count:Int)

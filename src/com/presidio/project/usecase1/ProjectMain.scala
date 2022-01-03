@@ -1,5 +1,7 @@
 package com.presidio.project.usecase1
 
+import com.presidio.project.usecase2.RevenueCalculator
+
 object ProjectMain {
 
 
@@ -7,6 +9,8 @@ object ProjectMain {
     // Invoke Product method in ProductType  
     val productType = new ProjectType
     productType.Product()
+    val revenueCalculator = new RevenueCalculator
+    revenueCalculator.calculateRevenue()
   }
 
 }
